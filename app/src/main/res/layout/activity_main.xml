@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="X is for player1"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:id="@+id/txtFirst"
+    android:layout_margin="20dp"
+    android:layout_centerHorizontal="true"
+/>
+ <TextView
+     android:layout_centerHorizontal="true"
+     android:textStyle="bold"
+     android:textSize="20dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="O is for player2"
+     android:layout_below="@id/txtFirst"
+     android:id="@+id/txtSecond"
+     android:layout_margin="20dp"
+     />
+ <GridLayout
+
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:columnOrderPreserved="true"
+    android:useDefaultMargins="true"
+    android:background="@color/appcolor"
+     android:id="@+id/grid"
+    >
+   <Button android:layout_height="60dp"
+       android:layout_width="60dp"
+       android:text="s"
+       android:background="#ffffff"
+       android:id="@+id/btn1"
+       />
+    <Button android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:text="s"
+        android:background="#ffffff"
+        android:id="@+id/btn2"
+        />
+    <Button android:layout_height="60dp"
+    android:layout_width="60dp"
+    android:text="s"
+    android:background="#ffffff"
+    android:id="@+id/btn3"
+    />
+    <Button android:layout_height="60dp"
+    android:layout_width="60dp"
+    android:text="s"
+    android:background="#ffffff"
+    android:id="@+id/btn4"
+    />
+    <Button android:layout_height="60dp"
+    android:layout_width="60dp"
+    android:text="s"
+    android:background="#ffffff"
+    android:id="@+id/btn5"
+    />
+    <Button android:layout_height="60dp"
+    android:layout_width="60dp"
+    android:text="s"
+    android:background="#ffffff"
+    android:id="@+id/btn6"
+    />
+    <Button android:layout_height="60dp"
+    android:layout_width="60dp"
+    android:text="s"
+    android:background="#ffffff"
+    android:id="@+id/btn7"
+    />
+    <Button android:layout_height="60dp"
+    android:layout_width="60dp"
+    android:text="s"
+    android:background="#ffffff"
+    android:id="@+id/btn8"
+    />
+    <Button android:layout_height="60dp"
+    android:layout_width="60dp"
+    android:text="s"
+    android:background="#ffffff"
+    android:id="@+id/btn9"
+    />
+</GridLayout>
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@color/appcolor"
+     android:layout_below="@id/grid"
+     android:text="undo"
+     android:textColor="#FFFFFF"
+     android:textStyle="bold"
+     android:layout_margin="20dp"
+     android:layout_centerHorizontal="true"
+     android:id="@+id/btnUndo"
+  />
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+  android:background="@color/appcolor"
+     android:text="Play Again"
+     android:id="@+id/btnRestart"
+     android:textColor="#ffffff"
+     android:layout_alignParentBottom="true"
+  />
+</RelativeLayout>
